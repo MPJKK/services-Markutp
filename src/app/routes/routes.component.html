@@ -1,0 +1,13 @@
+<p>
+  Pysäkin nimi
+  {{pysakki}}
+</p>
+<form method="post">
+  <input type="text" name="pysakki">
+  <input type="submit" value="Send Request">
+</form>
+<ul>
+  <li *ngFor="let stoppi of tiedot">
+    <p>{{stoppi.shortName}}{{stoppi.longName}}</p>
+  </li>
+</ul>
